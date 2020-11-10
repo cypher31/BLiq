@@ -1,0 +1,161 @@
+[gd_scene format=2]
+
+[node name="tab_investigation_template" type="Tabs"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 14.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hbox_investigation" type="HBoxContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 987.0
+margin_bottom = 353.0
+rect_min_size = Vector2( 980, 346 )
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vbox_left" type="VBoxContainer" parent="PanelContainer/hbox_investigation"]
+margin_right = 490.0
+margin_bottom = 346.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="input_prj_name" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_left"]
+margin_right = 490.0
+margin_bottom = 25.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_name"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "Project name"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_name"]
+margin_left = 138.0
+margin_right = 490.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+
+[node name="input_prj_number" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_left"]
+margin_top = 29.0
+margin_right = 490.0
+margin_bottom = 54.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_number"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "project number"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_number"]
+margin_left = 138.0
+margin_right = 490.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+
+[node name="vbox_right" type="VBoxContainer" parent="PanelContainer/hbox_investigation"]
+margin_left = 490.0
+margin_right = 980.0
+margin_bottom = 346.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="input_prj_name" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_right"]
+margin_right = 490.0
+margin_bottom = 25.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_name"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "Project number"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_name"]
+margin_left = 138.0
+margin_right = 490.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="input_prj_number" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_right"]
+margin_top = 29.0
+margin_right = 490.0
+margin_bottom = 54.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_number"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "Project number"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_number"]
+margin_left = 138.0
+margin_right = 490.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_editor_description_": ""
+}

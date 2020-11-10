@@ -3,9 +3,9 @@
 [node name="console_out" type="TextEdit"]
 margin_top = 304.0
 margin_right = 1002.0
-margin_bottom = 550.0
+margin_bottom = 454.0
+rect_min_size = Vector2( 1002, 150 )
 size_flags_horizontal = 3
-size_flags_vertical = 3
 readonly = true
 show_line_numbers = true
 wrap_enabled = true
