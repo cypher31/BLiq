@@ -5,47 +5,46 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 32.0
-margin_right = -4.0
-margin_bottom = -4.0
+margin_right = -39.9999
+margin_bottom = -222.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-margin_right = 14.0
-margin_bottom = 14.0
+[node name="vbox_investigation" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="hbox_investigation" type="HBoxContainer" parent="PanelContainer"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 987.0
-margin_bottom = 353.0
-rect_min_size = Vector2( 980, 346 )
+[node name="hbox_investigation" type="HBoxContainer" parent="vbox_investigation"]
+margin_right = 966.0
+margin_bottom = 346.0
+rect_min_size = Vector2( 966, 346 )
 custom_constants/separation = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="vbox_left" type="VBoxContainer" parent="PanelContainer/hbox_investigation"]
-margin_right = 490.0
-margin_bottom = 346.0
+[node name="vbox_left" type="VBoxContainer" parent="vbox_investigation/hbox_investigation"]
+margin_right = 483.0
+margin_bottom = 141.0
+rect_min_size = Vector2( 483, 0 )
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="input_prj_name" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_left"]
-margin_right = 490.0
+[node name="input_prj_name" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_left"]
+margin_right = 483.0
 margin_bottom = 25.0
 custom_constants/separation = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_name"]
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_left/input_prj_name"]
 margin_top = -1.0
 margin_right = 138.0
 margin_bottom = 24.0
@@ -55,23 +54,23 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_name"]
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_left/input_prj_name"]
 margin_left = 138.0
-margin_right = 490.0
+margin_right = 483.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 138, 25 )
 size_flags_horizontal = 3
 
-[node name="input_prj_number" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_left"]
+[node name="input_prj_number" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_left"]
 margin_top = 29.0
-margin_right = 490.0
+margin_right = 483.0
 margin_bottom = 54.0
 custom_constants/separation = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_number"]
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_left/input_prj_number"]
 margin_top = -1.0
 margin_right = 138.0
 margin_bottom = 24.0
@@ -81,36 +80,115 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_left/input_prj_number"]
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_left/input_prj_number"]
 margin_left = 138.0
-margin_right = 490.0
+margin_right = 483.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 138, 25 )
 size_flags_horizontal = 3
 
-[node name="vbox_right" type="VBoxContainer" parent="PanelContainer/hbox_investigation"]
-margin_left = 490.0
-margin_right = 980.0
+[node name="input_date" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_left"]
+margin_top = 58.0
+margin_right = 483.0
+margin_bottom = 83.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_left/input_date"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "date drilled"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_left/input_date"]
+margin_left = 138.0
+margin_right = 483.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+
+[node name="input_logged" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_left"]
+margin_top = 87.0
+margin_right = 483.0
+margin_bottom = 112.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_left/input_logged"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "logged by"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_left/input_logged"]
+margin_left = 138.0
+margin_right = 483.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+
+[node name="input_driller" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_left"]
+margin_top = 116.0
+margin_right = 483.0
+margin_bottom = 141.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_left/input_driller"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "driller"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_left/input_driller"]
+margin_left = 138.0
+margin_right = 483.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+
+[node name="vbox_right" type="VBoxContainer" parent="vbox_investigation/hbox_investigation"]
+margin_left = 483.0
+margin_right = 966.0
 margin_bottom = 346.0
+rect_min_size = Vector2( 483, 0 )
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="input_prj_name" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_right"]
-margin_right = 490.0
+[node name="input_rig" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_right"]
+margin_right = 483.0
 margin_bottom = 25.0
 custom_constants/separation = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_name"]
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_right/input_rig"]
 margin_top = -1.0
 margin_right = 138.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 138, 25 )
-text = "Project number"
+text = "rig type"
 align = 1
 valign = 1
 uppercase = true
@@ -118,9 +196,9 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_name"]
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_right/input_rig"]
 margin_left = 138.0
-margin_right = 490.0
+margin_right = 483.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 138, 25 )
 size_flags_horizontal = 3
@@ -128,21 +206,21 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="input_prj_number" type="HBoxContainer" parent="PanelContainer/hbox_investigation/vbox_right"]
+[node name="input_hammer_drop" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_right"]
 margin_top = 29.0
-margin_right = 490.0
+margin_right = 483.0
 margin_bottom = 54.0
 custom_constants/separation = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_number"]
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_right/input_hammer_drop"]
 margin_top = -1.0
 margin_right = 138.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 138, 25 )
-text = "Project number"
+text = "hammer drop (in)"
 align = 1
 valign = 1
 uppercase = true
@@ -150,12 +228,134 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/hbox_investigation/vbox_right/input_prj_number"]
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_right/input_hammer_drop"]
 margin_left = 138.0
-margin_right = 490.0
+margin_right = 483.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 138, 25 )
 size_flags_horizontal = 3
 __meta__ = {
 "_editor_description_": ""
+}
+
+[node name="input_hammer_weight" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_right"]
+margin_top = 58.0
+margin_right = 483.0
+margin_bottom = 83.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_right/input_hammer_weight"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "hammer wt. (lbs)"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_right/input_hammer_weight"]
+margin_left = 138.0
+margin_right = 483.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="input_boring_elevation" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_right"]
+margin_top = 87.0
+margin_right = 483.0
+margin_bottom = 112.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_right/input_boring_elevation"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "boring elev. (ft)"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_right/input_boring_elevation"]
+margin_left = 138.0
+margin_right = 483.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="input_gwt" type="HBoxContainer" parent="vbox_investigation/hbox_investigation/vbox_right"]
+margin_top = 116.0
+margin_right = 483.0
+margin_bottom = 141.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="vbox_investigation/hbox_investigation/vbox_right/input_gwt"]
+margin_top = -1.0
+margin_right = 138.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 138, 25 )
+text = "gwt elev. (ft)"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/hbox_investigation/vbox_right/input_gwt"]
+margin_left = 138.0
+margin_right = 483.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 138, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="boring_data" type="HBoxContainer" parent="vbox_investigation"]
+margin_top = 350.0
+margin_right = 966.0
+margin_bottom = 392.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="boring_data_template" type="VBoxContainer" parent="vbox_investigation/boring_data"]
+margin_right = 966.0
+margin_bottom = 42.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="vbox_investigation/boring_data/boring_data_template"]
+margin_right = 966.0
+margin_bottom = 14.0
+text = "Boring"
+
+[node name="LineEdit" type="LineEdit" parent="vbox_investigation/boring_data/boring_data_template"]
+margin_top = 18.0
+margin_right = 966.0
+margin_bottom = 42.0
+__meta__ = {
+"_edit_use_anchors_": false
 }

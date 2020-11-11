@@ -4,38 +4,32 @@
 
 [node name="Project Info" instance=ExtResource( 1 )]
 
-[node name="PanelContainer" type="PanelContainer" parent="." index="0"]
-margin_right = 1002.0
-margin_bottom = 396.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="0"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 995.0
 margin_bottom = 389.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" index="0"]
 margin_right = 988.0
 margin_bottom = 300.0
 
-[node name="VBoxLeft" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" index="0"]
+[node name="VBoxLeft" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" index="0"]
 margin_right = 650.0
 margin_bottom = 300.0
 rect_min_size = Vector2( 650, 300 )
 
-[node name="prj_name" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft" index="0"]
+[node name="prj_name" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxLeft" index="0"]
 margin_right = 650.0
 margin_bottom = 50.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_name" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_name" index="0"]
 margin_top = -1.0
 margin_right = 323.0
 margin_bottom = 49.0
@@ -46,14 +40,14 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_name" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_name" index="1"]
 margin_left = 327.0
 margin_right = 650.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 277, 50 )
 size_flags_horizontal = 3
 
-[node name="prj_number" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft" index="1"]
+[node name="prj_number" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxLeft" index="1"]
 margin_top = 54.0
 margin_right = 650.0
 margin_bottom = 104.0
@@ -61,7 +55,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_number" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_number" index="0"]
 margin_top = -1.0
 margin_right = 323.0
 margin_bottom = 49.0
@@ -72,14 +66,14 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_number" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_number" index="1"]
 margin_left = 327.0
 margin_right = 650.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 277, 50 )
 size_flags_horizontal = 3
 
-[node name="prj_coordinates" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft" index="2"]
+[node name="prj_coordinates" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxLeft" index="2"]
 margin_top = 108.0
 margin_right = 650.0
 margin_bottom = 158.0
@@ -88,7 +82,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_coordinates" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_coordinates" index="0"]
 margin_top = -1.0
 margin_right = 328.0
 margin_bottom = 49.0
@@ -99,19 +93,19 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit_Lat" type="LineEdit" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_coordinates" index="1"]
+[node name="LineEdit_Lat" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_coordinates" index="1"]
 margin_left = 328.0
 margin_right = 489.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 161, 50 )
 
-[node name="LineEdit_Long" type="LineEdit" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_coordinates" index="2"]
+[node name="LineEdit_Long" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_coordinates" index="2"]
 margin_left = 489.0
 margin_right = 650.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 161, 0 )
 
-[node name="prj_user" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft" index="3"]
+[node name="prj_user" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxLeft" index="3"]
 margin_top = 162.0
 margin_right = 650.0
 margin_bottom = 212.0
@@ -119,7 +113,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_user" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_user" index="0"]
 margin_top = -1.0
 margin_right = 323.0
 margin_bottom = 49.0
@@ -130,14 +124,14 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_user" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_user" index="1"]
 margin_left = 327.0
 margin_right = 650.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 277, 50 )
 size_flags_horizontal = 3
 
-[node name="prj_date" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft" index="4"]
+[node name="prj_date" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxLeft" index="4"]
 margin_top = 216.0
 margin_right = 650.0
 margin_bottom = 266.0
@@ -145,7 +139,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_date" index="0"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_date" index="0"]
 margin_top = -1.0
 margin_right = 323.0
 margin_bottom = 49.0
@@ -156,21 +150,21 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="LineEdit" type="LineEdit" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxLeft/prj_date" index="1"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxLeft/prj_date" index="1"]
 margin_left = 327.0
 margin_right = 650.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 277, 50 )
 size_flags_horizontal = 3
 
-[node name="VBoxRight" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" index="1"]
+[node name="VBoxRight" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" index="1"]
 margin_left = 654.0
 margin_right = 988.0
 margin_bottom = 300.0
 rect_min_size = Vector2( 0, 300 )
 size_flags_horizontal = 3
 
-[node name="button_save" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxRight" index="0"]
+[node name="button_save" type="Button" parent="VBoxContainer/HBoxContainer/VBoxRight" index="0"]
 margin_right = 334.0
 margin_bottom = 20.0
 text = "Save Project File"
